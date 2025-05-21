@@ -1,7 +1,7 @@
 import sqlite3 as sql
 
-con = sql.connect("database.db")
-cursor = con.cursor()
+conn = sql.connect("database.db")
+cursor = conn.cursor()
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS UserAuthentication (
@@ -32,9 +32,9 @@ description TEXT)''')
 
 # cursor.executemany('''INSERT INTO UserAuthentication (username, password) VALUES (?, ?)''', data)
 
-con.commit()
+conn.commit()
 
 # for row in cursor.execute("SELECT * FROM UserAuthentication"):
 #     print(row)
 
-con.close()
+conn.close()
