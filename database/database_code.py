@@ -23,7 +23,7 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS Expenses (
 expense_id INT PRIMARY KEY,
 user TEXT NOT NULL,
-amount TEXT NOT NULL,
+amount REAL NOT NULL,
 category TEXT NOT NULL,
 date DATE NOT NULL,
 time TIME NOT NULL,
