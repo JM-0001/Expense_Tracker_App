@@ -30,10 +30,10 @@ date DATE NOT NULL,
 time TIME NOT NULL,
 description TEXT)''')
 
-username = input("username: ")
-password = input("password: ")
+# username = input("username: ")
+# password = input("password: ")
 
-cursor.execute("INSERT INTO UserAuthentication VALUES (:username, :password)", {'username': username, 'password': password})
+# cursor.execute("INSERT INTO UserAuthentication VALUES (:username, :password)", {'username': username, 'password': password})
 
 conn.commit()
 
