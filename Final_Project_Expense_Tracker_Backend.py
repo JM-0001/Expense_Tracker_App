@@ -32,7 +32,7 @@ class Expense:
     def calculate_total(self) -> float:
         return self._amount 
 
-class Expense_Tracker:
+class ExpenseTracker:
 
     def __init__ (self):
         self._expenses: List[Expense] = []
