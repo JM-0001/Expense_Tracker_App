@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from Final_Project_Expense_Tracker_Backend import *
+from backend.Final_Project_Expense_Tracker_Backend import *
 
 conn = sql.connect("database.db")
 cursor = conn.cursor()
@@ -30,8 +30,10 @@ date DATE NOT NULL,
 time TIME NOT NULL,
 description TEXT)''')
 
+username = input("username: ")
+password = input("password: ")
 
-# cursor.executemany('''INSERT INTO UserAuthentication (username, password) VALUES (?, ?)''', data)
+cursor.execute("INSERT INTO UserAuthentication VALUES (:username, :password)", {'username': username, 'password': password})
 
 conn.commit()
 
