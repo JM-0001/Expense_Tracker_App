@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from backend.Final_Project_Expense_Tracker_Backend import *
+
 
 conn = sql.connect("database.db")
 cursor = conn.cursor()
