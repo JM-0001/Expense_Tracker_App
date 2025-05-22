@@ -30,6 +30,21 @@ date DATE NOT NULL,
 time TIME NOT NULL,
 description TEXT)''')
 
+
+# def insert_new_user(user:dict):
+#     # user dict contains the ff. keys: username, last_name, first_name (optional), password
+#     pass
+
+# def insert_expense(username:str, amount:float, category:str, date, time, desc:str):
+#     pass
+
+# def delete_expense(expense_id:int):
+#     pass
+
+# def remove_user():
+#     pass
+
+
 # username = input("username: ")
 # password = input("password: ")
 
