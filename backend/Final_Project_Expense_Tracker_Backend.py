@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod # use/apply the abstract method
 import datetime, csv
 from typing import List
 
@@ -50,7 +50,7 @@ class ExpenseTracker:
     def generate_report(self) -> str:
         report_list = []
         for expense in self._expenses:
-            line = f"${expense._amount:.2f} - {expense._category}"
+            line = f"₱{expense._amount:.2f} - {expense._category}"
             report_list.append(line)
         return "\n".join(report_list) 
 
